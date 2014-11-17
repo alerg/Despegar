@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hoteles</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/coffeegrinder.css">
+    <link rel="stylesheet" href="styles/wireframe-theme.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="rowcontent row">
+        <div class="coffee-span-17">
+            <div class="row">
+                <div class="coffee-span-17">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#" title="Ir a home">Despegar.com</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Ir a hoteles">Hoteles</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Ir a Hoteles en cuba">Hoteles en cuba</a>
+                        </li>
+                        <li class="active">Hoteles en Rio de Janeiro</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coffee-span-17 divtitle">
+                    <span class="text-element title">110 Hoteles en Rio de Janeiro, Brasil</span>
+                </div>
+            </div>
+            <div class="row search">
+                <div class="coffee-span-11 searchcontainer">
+                  <form class="form-container">
+                    <div class="subgrid">
+                      <div class="row">
+                        <div class="coffee-span-19">
+                          <span class="text-element searchTitle">Buscar hoteles en Rio de Janeiro, Brasil</span>
+                        </div>
+                      </div>
+                      <div class="row searchdata">
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Ciudad</label>
+                        </div>
+                        <div class="coffee-span-16"><input value="" name="ciudad" type="text" class="searchInput" id="ciudad">
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Entrada</label>
+                        </div>
+                        <div class="coffee-span-16">
+                            <input class="date" type="date" name="entrada" />
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Salida</label>
+                        </div>
+                        <div class="coffee-span-16">
+                            <input class="date" type="date" name="salida" />
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Cantidad</label>
+                        </div>
+                        <div class="coffee-span-16">
+                            <select class="amount">
+                                <option>1 habitaci&oacute;n</option>
+                                <option>2 habitaci&oacute;n</option>
+                                <option>3 habitaci&oacute;n</option>
+                                <option>4 habitaci&oacute;n</option>
+                            </select>
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label smallSearchLabel">huéspedes</label>
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Adultos</label><select class="listbox list-box-1"><option>1</option><option>2</option><option>3</option></select>
+                        </div>
+                        <div class="coffee-span-3">
+                          <label class="label searchLabel">Menores</label><select class="listbox list-box-1"><option>1</option><option>2</option><option>3</option></select>
+                        </div>
+                        <div class="coffee-span-10">
+                          <img class="sprite-mejor_precio" />
+                          <img class="sprite-buscar" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="coffee-span-6 column-5 bannerhome"></div>
+            </div>
+            <div class="row cuerpo">
+                <div class="coffee-span-12">
+                    <div class="row divtitle">
+                        <span class="text-element title">Listado de hoteles en Rio de Janeiro, Brasil</span>
+                    </div>
+                    <div class="coffee-span-19" id="container"></div>
+                </div>
+                <div class="coffee-span-5">
+                    <div class="coffee-span-19"></div>
+                </div>
+            </div>
+        </div>
+        <div class="coffee-span-1"></div>
+    </div>
+     <!-- build:js scripts/main.js -->
+    <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
