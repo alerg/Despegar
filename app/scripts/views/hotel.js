@@ -13,7 +13,7 @@ define([
 
         tagName: 'div',
 
-        className: 'row hotel',
+        className: 'hotel col-md-12 nopadding',
 
         events: {
             'click [data-interactive="disponibilidad"]': 'viewModal'

@@ -1,16 +1,16 @@
-<div class="coffee-span-3 imageHotel"><img class="image-4-3 hotel" src="<%=urlimage%>" alt="Image">
+<div class="col-md-2 imageHotel"><img class="hotel" src="<%=urlimage%>" alt="Image">
 </div>
-<div class="coffee-span-8 characteristics">
+<div class="col-md-4 characteristics">
 	<a class="link-text hotel-title" href="#" title="<%=name%>"><%=name%></a>
 	<span class="text-element text-1"><%=address%><br></span>
 	<a class="link-text verMapa" href="#" title="ver mapa">Ver mapa<br></a>
 </div>
-<div class="coffee-span-4 comunity">
+<div class="col-md-3 comunity">
 	<span class="text-element text-2"><%= description%></span>
 	<span class="text-element text-3"><%= rating%> puntos<br></span>
 	<a class="link-text text-link-2" href="#"><%= comments%> comentarios</a>
 </div>
-<div class="coffee-span-4 price">
+<div class="col-md-3 price">
 	<span class="text-element text-4">Desde</span>
 	<span class="text-element text-5">U$S <%= price %><br></span>
 	<img data-interactive="disponibilidad" data-from="<%= availability.from%>" data-to="<%= availability.to%>" class="sprite-disponibilidad" />
