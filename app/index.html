@@ -7,129 +7,13 @@
     <title>Hoteles</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATR7qD1EjJdoDlyEzViGFcgZqOFNvwJjs&sensor=false"></script>
 </head>
 
 <body>
-    <div class="col-md-12 cuerpo radius">
-        <nav class="col-md-12 nopadding">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="#" title="Ir a home">Despegar.com</a>
-                </li>
-                <li>
-                    <a href="#" title="Ir a hoteles">Hoteles</a>
-                </li>
-                <li>
-                    <a href="#" title="Ir a Hoteles en cuba">Hoteles en cuba</a>
-                </li>
-                <li class="active">Hoteles en Rio de Janeiro</li>
-            </ol>
-        </nav>
-        <header class="col-md-12 divtitle">
-            <span class="text-element title">110 Hoteles en Rio de Janeiro, Brasil</span>
-        </header>
-        <section class="col-md-12 search">
-          <div class="col-md-7 searchcontainer">
-              <form class="form-container">
-                <div class="subgrid">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <span class="text-element searchTitle">Buscar hoteles en Rio de Janeiro, Brasil</span>
-                    </div>
-                  </div>
-                  <div class="row searchdata">
-                    <div class="col-md-12 data">
-                        <div class="col-md-1 nopadding">
-                          <label class="searchLabel">Ciudad</label>
-                        </div>
-                        <div class="col-md-11"><input value="" name="ciudad" type="text" class="searchInput" id="ciudad">
-                        </div>
-                    </div>
-                    <div class="col-md-12 data">
-                    <div class="col-md-1 nopadding">
-                      <label class="searchLabel">Entrada</label>
-                    </div>
-                    <div class="col-md-11">
-                        <input class="date" type="date" name="entrada" />
-                    </div>
-                    </div>
-                    <div class="col-md-12 data">
-                    <div class="col-md-1 nopadding">
-                      <label class="searchLabel">Salida</label>
-                    </div>
-                    <div class="col-md-11">
-                        <input class="date" type="date" name="salida" />
-                    </div>
-                    </div>
-                    <div class="col-md-12 data">
-                    <div class="col-md-1 nopadding">
-                      <label class="searchLabel">Cantidad</label>
-                    </div>
-                    <div class="col-md-11">
-                        <select class="amount">
-                            <option>1 habitaci&oacute;n</option>
-                            <option>2 habitaci&oacute;n</option>
-                            <option>3 habitaci&oacute;n</option>
-                            <option>4 habitaci&oacute;n</option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="col-md-12">
-                    <div class="col-md-1 nopadding">
-                      <label class="smallSearchLabel">huéspedes</label>
-                    </div>
-                    <div class="col-md-2">
-                      <label class="searchLabel superior">Adultos</label><select class="listbox list-box-1"><option>1</option><option>2</option><option>3</option></select>
-                    </div>
-                    <div class="col-md-2">
-                      <label class="searchLabel superior">Menores</label><select class="listbox list-box-1"><option>1</option><option>2</option><option>3</option></select>
-                    </div>
-                    <div class="col-md-7">
-                      <img class="sprite-mejor_precio" />
-                      <img class="sprite-buscar" />
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-          </div>
-          <div class="col-md-5 bannerhome radius">
-              <img class="banner" src="/images/bannerhome.png" />;
-          </div>
-        </section>
-        <div class="col-md-12 nopadding">  
-          <section class="col-md-8 nopadding">
-              <div>
-                <div class="divtitle">
-                    <span class="text-element title">Listado de hoteles en Rio de Janeiro, Brasil</span>
-                </div>
-                <div class="" id="container"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="col-md-12"></div>
-            </div>
-          </section>
-          <aside class="col-md-4"></aside>
-        </div>
-        <footer class="col-md-12">
-          <div class="subgrid">
-            <div class="row">
-              <div class="col-md-12"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-12"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-12"></div>
-            </div>
-          </div>
-        </footer>
-    </div>
-     <!-- build:js scripts/main.js -->
+    <!-- build:js scripts/main.js -->
     <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
     <!-- endbuild -->
 </body>

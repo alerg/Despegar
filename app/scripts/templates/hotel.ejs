@@ -2,16 +2,20 @@
 </div>
 <div class="col-md-4 characteristics">
 	<a class="link-text hotel-title" href="#" title="<%=name%>"><%=name%></a>
+	<div class="sprite-icons stars<%=stars%>"></div>
 	<span class="text-element text-1"><%=address%><br></span>
 	<a class="link-text verMapa" href="#" title="ver mapa">Ver mapa<br></a>
 </div>
 <div class="col-md-3 comunity">
-	<span class="text-element text-2"><%= description%></span>
+	<div>
+		<span class="sprite-icons comment"></span>
+		<span class="text-element text-2"><%= description%></span>
+	</div>
 	<span class="text-element text-3"><%= rating%> puntos<br></span>
 	<a class="link-text text-link-2" href="#"><%= comments%> comentarios</a>
 </div>
 <div class="col-md-3 price">
 	<span class="text-element text-4">Desde</span>
 	<span class="text-element text-5">U$S <%= price %><br></span>
-	<img data-interactive="disponibilidad" data-from="<%= availability.from%>" data-to="<%= availability.to%>" class="sprite-disponibilidad" />
+	<div data-interactive="disponibilidad" data-from="<%= availability.from%>" data-to="<%= availability.to%>" class="sprite-disponibilidad"> </div>
 </div>

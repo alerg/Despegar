@@ -17,7 +17,7 @@ require.config({
         backbone: '../bower_components/backbone/backbone',
         underscore: '../bower_components/lodash/dist/lodash',
         bootstrap: '../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap',
-        'bootstrap-modal': '../bower_components/backbone.bootstrap-modal/src/backbone.bootstrap-modal'
+        'bootstrap-modal': '../bower_components/backbone.bootstrap-modal/src/backbone.bootstrap-modal',
     }
 });
 

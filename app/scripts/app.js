@@ -4,36 +4,32 @@ define([
     'backbone',
     'bootstrap',
     'bootstrap-modal',
+    'collections/comment',
     'collections/hotel',
-    'views/hotel',
+    'views/googleMap',
+    'views/index',
     'views/modal',
     'models/modal'
-], function($, _, Backbone, Bootstrap, Modal, HotelCollection, HotelView, ModalView, ModalModel) {
+], function($, _, Backbone, Bootstrap, Modal, CommentCollection, HotelCollection, GoogleView, IndexView, ModalView, ModalModel) {
     var initialize = function() {
 
         var that = this;
-        this.collection = new HotelCollection();
-        this.collection.pull(function(error) {
-            if (error)
-                return;
-            $.each(that.collection.models, function(index) {
-                that.collection.models[index].setUrlimage('images/hoteles/hotel'+ index +'.png');
-                
-                var view = new HotelView({
-                    model: that.collection.models[index]
-                });
-                
-                view.render(function(param) {
-                    $("#container").append(param.$el);
-                });
-                
-                view.on("viewAvailability", function(){
-                    var model = new ModalModel({from:view.model.availability.from, to:view.model.availability.to});
-                    modalView = new ModalView({model:model});
-                    modalView.show();
-                });
+
+        var indexView = new IndexView(); 
+
+        indexView.render(function(param){
+            $("body").append(param.$el);
+            
+            new HotelCollection();
+            
+            new CommentCollection();
+
+            var googleView = new GoogleView();
+            googleView.render(function(param) {
+                $("#map").append(param.$el);
             });
         });
+
     }
 
     return {
