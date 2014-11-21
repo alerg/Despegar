@@ -35,6 +35,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "postinstall": "echo postinstall time; ./node_modules/bower/bin/bower install -g; ./node_modules/grunt-cli/bin/grunt <your task name>"
+    "postinstall": "echo postinstall time; ./node_modules/bower/bin/bower install -g;"
   }
 }
